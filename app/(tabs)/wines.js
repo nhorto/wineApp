@@ -311,4 +311,5 @@ const styles = StyleSheet.create({
   },
   wineTypeText: {
     fontSize: 13,
-    fontWeight: '600',
+    fontWeight: '600'}})
+
