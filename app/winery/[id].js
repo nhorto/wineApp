@@ -22,14 +22,7 @@ export default function WineryDetail() {
   const router = useRouter();
   
   // Convert the wineries data to more accessible format
-  const wineriesArray = Object.keys(wineries.id).map(key => ({
-    id: wineries.id[key],
-    name: wineries.name[key],
-    address: wineries.address[key],
-    website: wineries.website[key],
-    latitude: wineries.latitude[key],
-    longitude: wineries.longitude[key]
-  }));
+  const wineriesArray = wineries;
   
   // Find the selected winery
   const winery = wineriesArray.find(w => w.id.toString() === id.toString());
@@ -348,4 +341,4 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
   },
-});
+}); 
